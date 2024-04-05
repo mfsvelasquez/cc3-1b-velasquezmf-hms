@@ -17,6 +17,7 @@ namespace HMS
             EndTime = endTime;
             Room = room;
             room.IsAvailable = true;
+            room.Reservations.Add(this);
         }
         public override string ToString()
         {

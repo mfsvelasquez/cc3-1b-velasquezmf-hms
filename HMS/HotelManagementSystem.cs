@@ -36,6 +36,7 @@ namespace HMS
                     {
                         if (reservation.GetHashCode() == reservationNumber)
                         {
+                            Console.WriteLine($"Reservation Details for Reservation Number {reservationNumber}");
                             Console.WriteLine(reservation);
                             return;
                         }
@@ -46,7 +47,7 @@ namespace HMS
         }
         public void RegisterUser(User user)
         {
-
+            Console.WriteLine($"User {user.Name} registered.");
         }
     }
 }
